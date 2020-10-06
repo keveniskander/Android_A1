@@ -6,4 +6,7 @@
     <string name = "Login">Login</string>
     <string name = "LoginName">votre nom</string>
     <string name="Password">mot de passe</string>
+    <string name="SwitchText">Qu\'est-ce que ce bouton fait?</string>
+    <string name="CheckText">Case</string>
+    <string name="RadioText">BoutonRadio</string>
 </resources>

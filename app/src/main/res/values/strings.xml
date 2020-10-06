@@ -5,4 +5,7 @@
     <string name="Login">login</string>
     <string name="LoginName">login name</string>
     <string name="Password">password</string>
+    <string name="SwitchText">What does this do?</string>
+    <string name="CheckText">CheckBox</string>
+    <string name="RadioText">RadioButton</string>
 </resources>

@@ -8,18 +8,24 @@
     android:columnCount="2"
     android:rowCount="2">
 
-    <RadioButton android:layout_columnWeight="1" android:gravity="fill">
-    </RadioButton>
+    <RadioButton
+        android:layout_columnWeight="1"
+        android:gravity="fill"
+        android:text="@string/RadioText"/>
 
-    <CheckBox android:layout_columnWeight="1" android:gravity="fill">
+    <CheckBox
+        android:layout_columnWeight="1"
+        android:gravity="fill"
+        android:text="@string/CheckText"/>
 
-    </CheckBox>
+    <Switch
+        android:layout_columnWeight="1"
+        android:gravity="fill"
+        android:text="@string/SwitchText"/>
 
-    <Switch android:layout_columnWeight="1" android:gravity="fill">
 
-    </Switch>
+    <ImageButton android:src="@android:drawable/ic_menu_camera"
+        android:layout_columnWeight="1"
+        android:gravity="fill"/>
 
-    <ImageButton android:src="@android:drawable/ic_menu_camera" android:layout_columnWeight="1" android:gravity="fill">
-
-    </ImageButton>
 </GridLayout>
