@@ -10,8 +10,11 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Switch;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -25,6 +28,25 @@ public class ListItemsActive extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_items_active);
         Log.i(ListItemsActive, "In onCreate()");
+        Switch sw = (Switch) findViewById(R.id.myswitch);
+        sw.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                CharSequence text;
+                int duration;
+
+                if (isChecked) {
+                    text = "Switch is On";
+                    duration = Toast.LENGTH_SHORT;
+                }else{
+                    text = "Switch is Off";
+                    duration = Toast.LENGTH_LONG;
+                }
+
+                Toast toast = Toast.makeText(getApplicationContext() , text, duration); //this is the ListActivity
+                toast.show(); //display your message box
+            }
+        });
     }
 
     public void onResume(){
@@ -71,4 +93,5 @@ public class ListItemsActive extends AppCompatActivity {
             imageButton.setImageBitmap(imageBitmap);
         }
     }
+
 }
