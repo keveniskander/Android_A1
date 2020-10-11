@@ -14,9 +14,10 @@
         android:text="@string/RadioText"/>
 
     <CheckBox
+        android:id="@+id/mycheckbox"
         android:layout_columnWeight="1"
         android:gravity="fill"
-        android:text="@string/CheckText"/>
+        android:text="@string/CheckText" />
 
     <Switch
         android:id="@+id/myswitch"

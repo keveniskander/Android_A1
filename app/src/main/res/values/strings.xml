@@ -11,4 +11,8 @@
     <string name="A2_preference_file_key">A2_preference_file_key</string>
     <string name="SwitchOnText">Switch is On</string>
     <string name="SwitchOffText">Switch is Off</string>
+    <string name="dialog_message">This is a dialog message</string>
+    <string name="dialog_title">This is a dialog title</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
 </resources>

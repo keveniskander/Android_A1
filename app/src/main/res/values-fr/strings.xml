@@ -12,4 +12,8 @@
     <string name="A2_preference_file_key">A2_preference_file_key</string>
     <string name="SwitchOnText">Interrupteur allumé</string>
     <string name="SwitchOffText">Interrupteur désactivé</string>
+    <string name="dialog_message">Voici un message de dialogue</string>
+    <string name ="dialog_title">Voici un titre dialogue</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Annuler</string>
 </resources>
