@@ -2,11 +2,13 @@ package com.example.androidassignments;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -59,10 +61,19 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void onActivityResult(int requestCode, int responseCode, Intent intent) {
-        super.onActivityResult(requestCode, responseCode, intent);
+    public void onActivityResult(int requestCode, int responseCode, Intent data) {
+        super.onActivityResult(requestCode, responseCode, data);
         if (requestCode == 10) {
             Log.i(MainActivity, "Returned to MainActivity.onActivityResult");
+        }
+        if (responseCode == Activity.RESULT_OK){
+            String messagePassed = data.getStringExtra("Response");
+
+            int duration = Toast.LENGTH_LONG;
+
+
+            Toast toast = Toast.makeText(MainActivity.this , messagePassed, duration); //this is the ListActivity
+            toast.show(); //display your message box
         }
     }
 
