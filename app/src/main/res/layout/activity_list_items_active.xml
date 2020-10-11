@@ -24,8 +24,11 @@
         android:text="@string/SwitchText"/>
 
 
-    <ImageButton android:src="@android:drawable/ic_menu_camera"
+    <ImageButton
+        android:id="@+id/image_button"
         android:layout_columnWeight="1"
-        android:gravity="fill"/>
+        android:gravity="fill"
+        android:src="@android:drawable/ic_menu_camera"
+        android:onClick="onClickImage"/>
 
 </GridLayout>
