@@ -114,6 +114,7 @@ public class ListItemsActive extends AppCompatActivity {
             startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
         } catch (ActivityNotFoundException e){
             // display error state to user
+
         }
     }
 
