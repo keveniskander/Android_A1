@@ -9,4 +9,5 @@
     <string name="SwitchText">Qu\'est-ce que ce bouton fait?</string>
     <string name="CheckText">Case</string>
     <string name="RadioText">BoutonRadio</string>
+    <string name="A2_preference_file_key">A2_preference_file_key</string>
 </resources>
