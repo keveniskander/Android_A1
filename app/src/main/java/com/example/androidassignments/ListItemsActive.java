@@ -2,6 +2,7 @@ package com.example.androidassignments;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.LauncherActivity;
 import android.content.ActivityNotFoundException;
@@ -63,6 +64,11 @@ public class ListItemsActive extends AppCompatActivity {
                         .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 // User clicked OK button
+                                Intent resultIntent = new Intent(  );
+                                resultIntent.putExtra("Response", "Here is my response");
+                                setResult(Activity.RESULT_OK, resultIntent);
+                                finish();
+
                             }
                         })
                         .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
