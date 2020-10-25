@@ -2,8 +2,10 @@ package com.example.androidassignments;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -25,6 +27,7 @@ public class ChatWindow extends AppCompatActivity {
         final EditText chatText = (EditText) findViewById(R.id.sendText);
         Button chatButton = (Button) findViewById(R.id.sendButton);
 
+
         chatButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 String chatString = chatText.getText().toString();
@@ -32,4 +35,11 @@ public class ChatWindow extends AppCompatActivity {
             }
         });
     }
+
+    private class ChatAdapter extends ArrayAdapter<String> {
+        public ChatAdapter(Context ctx) {
+            super(ctx, 0);
+        }
+    }
+
 }
