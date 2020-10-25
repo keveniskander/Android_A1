@@ -4,11 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -46,9 +49,19 @@ public class ChatWindow extends AppCompatActivity {
         public String getItem(int position){
             return chatMessage.get(position);
         }
-//        public View getView(int position, View convertView, ViewGroup parent){
-//
-//        }
+        public View getView(int position, View convertView, ViewGroup parent){
+            LayoutInflater inflater = ChatWindow.this.getLayoutInflater();
+            View result = null;
+            if(position %2 == 0){
+                result = inflater.inflate(R.layout.chat_row_incoming, null);
+            }else{
+                result = inflater.inflate(R.layout.chat_row_outgoing, null);
+            }
+            TextView message = (TextView)result.findViewById(R.id.sendText);
+            message.setText(   getItem(position)  ); // get the string at position
+            return result;
+
+        }
     }
 
 }
