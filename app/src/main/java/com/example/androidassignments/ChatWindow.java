@@ -40,6 +40,15 @@ public class ChatWindow extends AppCompatActivity {
         public ChatAdapter(Context ctx) {
             super(ctx, 0);
         }
+        public int getCount(){
+            return chatMessage.size();
+        }
+        public String getItem(int position){
+            return chatMessage.get(position);
+        }
+//        public View getView(int position, View convertView, ViewGroup parent){
+//
+//        }
     }
 
 }
