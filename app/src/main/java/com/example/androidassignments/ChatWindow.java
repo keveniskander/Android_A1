@@ -21,6 +21,7 @@ public class ChatWindow extends AppCompatActivity {
     private EditText chatText;
     private Button chatButton;
     private ArrayList<String> chatMessage = new ArrayList<String>();
+    public ChatAdapter messageAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,16 +31,34 @@ public class ChatWindow extends AppCompatActivity {
         final EditText chatText = (EditText) findViewById(R.id.sendText);
         Button chatButton = (Button) findViewById(R.id.sendButton);
 
+        //in this case, “this” is the ChatWindow, which is-A Context object
+        messageAdapter =new ChatAdapter( this );
+        chatList.setAdapter (messageAdapter);
 
-        chatButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                String chatString = chatText.getText().toString();
-                chatMessage.add(chatString);
-            }
-        });
+
+
+//        chatButton.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                String chatString = chatText.getText().toString();
+//                chatMessage.add(chatString);
+//
+//            }
+//        });
     }
 
+    public void saveMessage(View view){
+
+        chatMessage.add(chatText.getText().toString());
+        messageAdapter.notifyDataSetChanged();
+
+        chatText.setText("");
+
+    }
+
+
     private class ChatAdapter extends ArrayAdapter<String> {
+
+
         public ChatAdapter(Context ctx) {
             super(ctx, 0);
         }
@@ -62,6 +81,8 @@ public class ChatWindow extends AppCompatActivity {
             return result;
 
         }
+
+
     }
 
 }
