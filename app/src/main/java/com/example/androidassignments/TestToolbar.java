@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class TestToolbar extends AppCompatActivity {
 
@@ -52,6 +53,14 @@ public class TestToolbar extends AppCompatActivity {
 
             case (R.id.option3):
                 Log.d("Toolbar", "Option 3 selected");
+                break;
+            case (R.id.settings):
+                String messagePassed = "Version 1.0 by Keven Iskander";
+
+                int duration = Toast.LENGTH_LONG;
+
+                Toast toast = Toast.makeText(TestToolbar.this , messagePassed, duration); //this is the ListActivity
+                toast.show(); //display your message box
                 break;
 
 

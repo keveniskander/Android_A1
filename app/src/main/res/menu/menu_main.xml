@@ -22,4 +22,11 @@
         android:title="Three"
         app:showAsAction="always" />
 
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="4"
+        android:title="Settings"
+        app:showAsAction="never" />
+
+
 </menu>
