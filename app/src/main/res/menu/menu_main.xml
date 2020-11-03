@@ -3,17 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_one"
+        android:id="@+id/option1"
         android:icon="@drawable/ic_baseline_add_24"
         android:orderInCategory="101"
         android:title="One"
         app:showAsAction="always" />
-    <item android:id="@+id/action_two"
+    <item android:id="@+id/option2"
         android:title="One"
         android:icon="@drawable/ic_baseline_add_24"
         android:orderInCategory="101"
         app:showAsAction="always" />
-    <item android:id="@+id/action_three"
+    <item android:id="@+id/option3"
         android:title="One"
         android:icon="@drawable/ic_baseline_add_24"
         android:orderInCategory="101"
