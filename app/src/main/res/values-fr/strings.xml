@@ -18,4 +18,5 @@
     <string name="cancel">Annuler</string>
     <string name="StartChat">Démarre une discussion</string>
     <string name="SendChat">Envoyer</string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
 </resources>

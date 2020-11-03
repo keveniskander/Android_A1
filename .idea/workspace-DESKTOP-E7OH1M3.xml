@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9b1c869d-6cb5-4414-bdb7-00366ec68549" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/androidassignments/ChatWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/androidassignments/ChatWindow.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_30" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+        <option value="layoutResourceFile_vertical" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Part2" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="keveniskander" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="Android_A1" />
+  </component>
+  <component name="ProjectId" id="1hk8mMOqADaGSR4SIB0c3qt5TH7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="pixel_2_pie_9_0_-_api_28" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-09-22T21:17:13.437Z" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\keven\OneDrive\Documents\CP470\A1\app\src\main\res\drawable" />
+    </key>
+    <key name="android.template.429511995">
+      <recent name="com.example.androidassignments" />
+    </key>
+    <key name="android.template.1670240182">
+      <recent name="com.example.androidassignments" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b1c869d-6cb5-4414-bdb7-00366ec68549" name="Default Changelist" comment="" />
+      <created>1600543888117</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600543888117</updated>
+    </task>
+    <task id="LOCAL-00001" summary="6:48">
+      <created>1600555746218</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600555746218</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial Commit">
+      <created>1600555817721</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600555817721</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Version 0.9">
+      <created>1600557048834</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600557048834</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Version 1.0">
+      <created>1600557531423</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600557531423</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Version 1.0">
+      <created>1600814845299</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600814845299</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Version 1.0">
+      <created>1602014629925</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602014629925</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Task 1 almost complete">
+      <created>1602017623035</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602017623035</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added 3 activities for part 2">
+      <created>1602019278916</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602019278916</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Part 1 complete">
+      <created>1602364509389</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602364509389</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Part 2, Task 3 complete">
+      <created>1602372552543</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602372552543</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Part 2, Task 4 complete">
+      <created>1602437037042</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602437037042</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Part 2, Task 6 complete">
+      <created>1602439255499</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1602439255499</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Part 2, Task 7 complete">
+      <created>1602442926040</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602442926041</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Part 2, Task 8 complete">
+      <created>1602451610878</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1602451610878</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Part 2, Task 9 complete">
+      <created>1602453143385</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1602453143385</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Part 2, Task 10 complete">
+      <created>1602453464267</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1602453464268</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Part 2 complete">
+      <created>1602457151942</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1602457151944</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Part 2 complete">
+      <created>1602457857891</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1602457857892</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Working on Part 3 Task 3">
+      <created>1603639630107</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1603639630108</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Part 3 Task 3 Complete">
+      <created>1603659635344</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1603659635344</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Part 3 Task 4 Complete">
+      <created>1603661272623</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1603661272623</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Part 3 Task 5 Complete">
+      <created>1603661918571</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1603661918571</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Part 3 Task 6 Complete">
+      <created>1603665336693</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1603665336693</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Part 3 Task 7 Complete">
+      <created>1603666186614</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1603666186614</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Part 3 Task 8 Complete">
+      <created>1603666499381</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1603666499381</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Part 3 Task 9 Complete">
+      <created>1603666945693</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1603666945693</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="6:48" />
+    <MESSAGE value="Initial Commit" />
+    <MESSAGE value="Version 0.9" />
+    <MESSAGE value="Version 1.0" />
+    <MESSAGE value="Task 1 almost complete" />
+    <MESSAGE value="Added 3 activities for part 2" />
+    <MESSAGE value="Part 1 complete" />
+    <MESSAGE value="Part 2, Task 3 complete" />
+    <MESSAGE value="Part 2, Task 4 complete" />
+    <MESSAGE value="Part 2, Task 6 complete" />
+    <MESSAGE value="Part 2, Task 7 complete" />
+    <MESSAGE value="Part 2, Task 8 complete" />
+    <MESSAGE value="Part 2, Task 9 complete" />
+    <MESSAGE value="Part 2, Task 10 complete" />
+    <MESSAGE value="Part 2 complete" />
+    <MESSAGE value="Working on Part 3 Task 3" />
+    <MESSAGE value="Part 3 Task 3 Complete" />
+    <MESSAGE value="Part 3 Task 4 Complete" />
+    <MESSAGE value="Part 3 Task 5 Complete" />
+    <MESSAGE value="Part 3 Task 6 Complete" />
+    <MESSAGE value="Part 3 Task 7 Complete" />
+    <MESSAGE value="Part 3 Task 8 Complete" />
+    <MESSAGE value="Part 3 Task 9 Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Part 3 Task 9 Complete" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="263" y="119" key="AndroidCreateResourceFileDialog" timestamp="1603666280568">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="263" y="119" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1603666280568" />
+    <state x="541" y="177" key="AndroidCreateXmlResourceDialog" timestamp="1602445937117">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="541" y="177" key="AndroidCreateXmlResourceDialog/0.0.1366.728@0.0.1366.728" timestamp="1602445937117" />
+    <state x="291" y="0" key="CommitChangelistDialog2" timestamp="1603666944674">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="291" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1603666944674" />
+    <state x="409" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603639629599" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1602458133130">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602458133130" />
+    <state x="651" y="170" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1601322293394" />
+    <state x="733" y="387" key="Github.CreatePullRequestDialog" timestamp="1601322216977">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="733" y="387" key="Github.CreatePullRequestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601322216977" />
+    <state x="532" y="257" key="Github.ShareDialog" timestamp="1600555893696">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="532" y="257" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1600555893696" />
+    <state width="639" height="42" key="GridCell.Tab.0.bottom" timestamp="1603658350421">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="639" height="42" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603658350421" />
+    <state width="639" height="42" key="GridCell.Tab.0.center" timestamp="1603658350421">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="639" height="42" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603658350421" />
+    <state width="639" height="42" key="GridCell.Tab.0.left" timestamp="1603658350421">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="639" height="42" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603658350421" />
+    <state width="639" height="42" key="GridCell.Tab.0.right" timestamp="1603658350421">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="639" height="42" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603658350421" />
+    <state x="453" y="86" key="RollbackChangesDialog" timestamp="1602361591689">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="453" y="86" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1602361591689" />
+    <state x="184" y="6" key="SettingsEditor" timestamp="1603658362753">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603658362753" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603666950074">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603666950074" />
+    <state x="387" y="139" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603639637673" />
+    <state x="776" y="298" key="chooseDestDirectoryDialog" timestamp="1600814639590">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="776" y="298" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600814639590" />
+    <state x="92" y="92" width="1182" height="544" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1602434795630">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1366.728@0.0.1366.728" timestamp="1602434795630" />
+    <state x="129" y="131" width="1662" height="778" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600809366964" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1603658348032">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1603658348032" />
+    <state x="533" y="269" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601322046268" />
+    <state x="368" y="255" key="git4idea.merge.GitPullDialog" timestamp="1603738617885">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="368" y="255" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1603738617885" />
+    <state x="517" y="364" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601322120978" />
+    <state x="760" y="384" key="git4idea.rebase.GitRebaseDialog" timestamp="1600813817946">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="760" y="384" key="git4idea.rebase.GitRebaseDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600813817946" />
+    <state x="465" y="264" key="git4idea.ui.GitStashDialog" timestamp="1603664974284">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="465" y="264" key="git4idea.ui.GitStashDialog/0.0.1366.728@0.0.1366.728" timestamp="1603664974284" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1603668033510">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1603668033510" />
+  </component>
+</project>
