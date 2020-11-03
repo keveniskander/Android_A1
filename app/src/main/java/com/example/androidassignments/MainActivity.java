@@ -87,4 +87,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void clickStartToolbar(View view){
+
+        Intent intent = new Intent(MainActivity.this, TestToolbar.class);
+
+        startActivityForResult(intent,10);
+
+    }
+
 }

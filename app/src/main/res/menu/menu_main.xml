@@ -2,21 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
     <item
         android:id="@+id/option1"
         android:icon="@drawable/ic_baseline_add_24"
-        android:orderInCategory="101"
+        android:orderInCategory="1"
         android:title="One"
         app:showAsAction="always" />
-    <item android:id="@+id/option2"
-        android:title="One"
+    <item
+        android:id="@+id/option2"
         android:icon="@drawable/ic_baseline_add_24"
-        android:orderInCategory="101"
+        android:orderInCategory="2"
+        android:title="Two"
         app:showAsAction="always" />
-    <item android:id="@+id/option3"
-        android:title="One"
+    <item
+        android:id="@+id/option3"
         android:icon="@drawable/ic_baseline_add_24"
-        android:orderInCategory="101"
+        android:orderInCategory="3"
+        android:title="Three"
         app:showAsAction="always" />
 
 </menu>

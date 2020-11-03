@@ -29,24 +29,35 @@ public class TestToolbar extends AppCompatActivity {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-            public boolean onCreateOptionsMenu (Menu m){
-                getMenuInflater().inflate(R.menu.menu_main, m );
-                return true;
-
-            }
-            public boolean onOptionsItemSelected(MenuItem item){
-//                item.getItemId();
-                switch (item.getItemId()) {
-                    case R.id.option1:
-                        Log.d("Toolbar", "Option 1selected");
-                        break;
-                    case R.id.option2:
-                        //Start an activity…
-                        break;
-                }
-                return true;
-
-            }
         });
+    }
+
+    public boolean onCreateOptionsMenu(Menu m) {
+        getMenuInflater().inflate(R.menu.menu_main, m);
+        return true;
+
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        switch (id) {
+            case (R.id.option1):
+                Log.d("Toolbar", "Option 1 selected");
+                break;
+
+            case (R.id.option2):
+                Log.d("Toolbar", "Option 2 selected");
+                break;
+
+            case (R.id.option3):
+                Log.d("Toolbar", "Option 3 selected");
+                break;
+
+
+        }
+
+        //change from True to actual value
+        return true;
     }
 }
