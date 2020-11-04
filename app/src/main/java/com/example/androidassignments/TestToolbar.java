@@ -16,6 +16,8 @@ import android.widget.Toast;
 
 public class TestToolbar extends AppCompatActivity {
 
+//    String snackbarString;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +29,7 @@ public class TestToolbar extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Test snackbar", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -41,18 +43,24 @@ public class TestToolbar extends AppCompatActivity {
 
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-
+        String snackbarString = "You selected option 1";
+        FloatingActionButton fab = findViewById(R.id.fab);
         switch (id) {
             case (R.id.option1):
                 Log.d("Toolbar", "Option 1 selected");
+                Snackbar.make(fab, snackbarString, Snackbar.LENGTH_LONG).setAction(("Action"), null).show();
                 break;
 
             case (R.id.option2):
                 Log.d("Toolbar", "Option 2 selected");
+                snackbarString = "You selected option 2";
+                Snackbar.make(fab, snackbarString, Snackbar.LENGTH_LONG).setAction(("Action"), null).show();
                 break;
 
             case (R.id.option3):
                 Log.d("Toolbar", "Option 3 selected");
+                snackbarString = "You selected option 3";
+                Snackbar.make(fab, snackbarString, Snackbar.LENGTH_LONG).setAction(("Action"), null).show();
                 break;
             case (R.id.settings):
                 String messagePassed = "Version 1.0 by Keven Iskander";
@@ -62,7 +70,6 @@ public class TestToolbar extends AppCompatActivity {
                 Toast toast = Toast.makeText(TestToolbar.this , messagePassed, duration); //this is the ListActivity
                 toast.show(); //display your message box
                 break;
-
 
         }
 
