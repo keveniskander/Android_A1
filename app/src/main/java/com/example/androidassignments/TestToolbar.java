@@ -1,5 +1,7 @@
 package com.example.androidassignments;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -9,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,6 +20,7 @@ import android.widget.Toast;
 public class TestToolbar extends AppCompatActivity {
 
 //    String snackbarString;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,12 +59,48 @@ public class TestToolbar extends AppCompatActivity {
                 Log.d("Toolbar", "Option 2 selected");
                 snackbarString = "You selected option 2";
                 Snackbar.make(fab, snackbarString, Snackbar.LENGTH_LONG).setAction(("Action"), null).show();
-                break;
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle(R.string.go_back_message);
+                    // Add the buttons
+                builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        finish();
+                    }
+                });
+                builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // User cancelled the dialog
+                    }
+                });
+                    // Create the AlertDialog
+                AlertDialog dialog = builder.create();
+                dialog.show();
 
             case (R.id.option3):
                 Log.d("Toolbar", "Option 3 selected");
                 snackbarString = "You selected option 3";
                 Snackbar.make(fab, snackbarString, Snackbar.LENGTH_LONG).setAction(("Action"), null).show();
+
+//                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+//                builder.setTitle(R.string.go_back_message);
+//                LayoutInflater inflater = this.getLayoutInflater();
+//                View view = inflater.inflate(R.layout.builder, null);
+//                // Add the buttons
+//                builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog, int id) {
+//                        // User clicked OK button
+//                    }
+//                });
+//                builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog, int id) {
+//                        // User cancelled the dialog
+//                    }
+//                });
+//                // Create the AlertDialog
+//                AlertDialog dialog = builder.create();
+//                dialog.show();
+
                 break;
             case (R.id.settings):
                 String messagePassed = "Version 1.0 by Keven Iskander";
@@ -76,4 +116,5 @@ public class TestToolbar extends AppCompatActivity {
         //change from True to actual value
         return true;
     }
+
 }

@@ -20,4 +20,5 @@
     <string name="SendChat">Envoyer</string>
     <string name="title_activity_test_toolbar">TestToolbar</string>
     <string name="toolbar_button_text">Toolbar</string>
+    <string name="go_back_message">Voulez-vous retourner?</string>
 </resources>
