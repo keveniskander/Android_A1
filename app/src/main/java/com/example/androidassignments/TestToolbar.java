@@ -15,12 +15,15 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class TestToolbar extends AppCompatActivity {
 
 //    String snackbarString;
-
+    String snackBarText;
+    EditText newMessageText;
+    View view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,28 +82,19 @@ public class TestToolbar extends AppCompatActivity {
 
             case (R.id.option3):
                 Log.d("Toolbar", "Option 3 selected");
-                snackbarString = "You selected option 3";
-                Snackbar.make(fab, snackbarString, Snackbar.LENGTH_LONG).setAction(("Action"), null).show();
 
-//                AlertDialog.Builder builder = new AlertDialog.Builder(this);
-//                builder.setTitle(R.string.go_back_message);
-//                LayoutInflater inflater = this.getLayoutInflater();
-//                View view = inflater.inflate(R.layout.builder, null);
-//                // Add the buttons
-//                builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-//                    public void onClick(DialogInterface dialog, int id) {
-//                        // User clicked OK button
-//                    }
-//                });
-//                builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-//                    public void onClick(DialogInterface dialog, int id) {
-//                        // User cancelled the dialog
-//                    }
-//                });
-//                // Create the AlertDialog
-//                AlertDialog dialog = builder.create();
-//                dialog.show();
+                AlertDialog.Builder builder3 = new AlertDialog.Builder(this);
+                builder3.setTitle(("SetMessage"));
+                LayoutInflater inflater = this.getLayoutInflater();
 
+                builder3.setView(inflater.inflate(R.layout.message_window, null));
+                builder3.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        newMessageText = findViewById(R.id.custom_message);
+                        snackBarText = newMessageText.getText().toString();
+                    }
+                });
                 break;
             case (R.id.settings):
                 String messagePassed = "Version 1.0 by Keven Iskander";
