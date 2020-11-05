@@ -21,9 +21,9 @@ import android.widget.Toast;
 public class TestToolbar extends AppCompatActivity {
 
 //    String snackbarString;
-    String snackBarText;
+    String snackBarText = "You selected option 1";
     EditText newMessageText;
-    View view;
+//    View view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,20 +50,21 @@ public class TestToolbar extends AppCompatActivity {
 
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        String snackbarString = "You selected option 1";
+//        String snackbarString = "You selected option 1";
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
         FloatingActionButton fab = findViewById(R.id.fab);
         switch (id) {
             case (R.id.option1):
                 Log.d("Toolbar", "Option 1 selected");
-                Snackbar.make(fab, snackbarString, Snackbar.LENGTH_LONG).setAction(("Action"), null).show();
+                Snackbar.make(fab, snackBarText, Snackbar.LENGTH_LONG).setAction(("Action"), null).show();
                 break;
 
             case (R.id.option2):
                 Log.d("Toolbar", "Option 2 selected");
-                snackbarString = "You selected option 2";
-                Snackbar.make(fab, snackbarString, Snackbar.LENGTH_LONG).setAction(("Action"), null).show();
+                snackBarText= "You selected option 2";
+                Snackbar.make(fab, snackBarText, Snackbar.LENGTH_LONG).setAction(("Action"), null).show();
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
                 builder.setTitle(R.string.go_back_message);
                     // Add the buttons
                 builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
@@ -79,22 +80,26 @@ public class TestToolbar extends AppCompatActivity {
                     // Create the AlertDialog
                 AlertDialog dialog = builder.create();
                 dialog.show();
+                break;
 
             case (R.id.option3):
                 Log.d("Toolbar", "Option 3 selected");
-
-                AlertDialog.Builder builder3 = new AlertDialog.Builder(this);
-                builder3.setTitle(("SetMessage"));
                 LayoutInflater inflater = this.getLayoutInflater();
+                final View v = inflater.inflate(R.layout.message_window, null);
 
-                builder3.setView(inflater.inflate(R.layout.message_window, null));
-                builder3.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                builder.setTitle(("SetMessage"));
+
+
+                builder.setView(v);
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        newMessageText = findViewById(R.id.custom_message);
+                        newMessageText = v.findViewById(R.id.custom_message);
                         snackBarText = newMessageText.getText().toString();
                     }
                 });
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
                 break;
             case (R.id.settings):
                 String messagePassed = "Version 1.0 by Keven Iskander";
