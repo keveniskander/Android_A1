@@ -2,12 +2,14 @@ package com.example.androidassignments;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 import androidx.annotation.Nullable;
 
+import java.util.ArrayList;
 
 
 public class ChatDatabaseHelper extends SQLiteOpenHelper {
@@ -24,8 +26,20 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase database) {
+        ArrayList<String> MessageArray = new ArrayList<String>();
         database.execSQL(DATABASE_CREATE);
 //        addTable (database) ;
+        String[] columns = {ChatDatabaseHelper.KEY_MESSAGE};
+        Cursor cursor = database.query(ChatDatabaseHelper.TABLE_NAME, columns, null, null, null, null, null);
+        while(!cursor.isAfterLast()){
+            MessageArray.add(cursor.getString((cursor.getColumnIndex(ChatDatabaseHelper.KEY_MESSAGE))));
+            Log.i("Chatwindow.java", "SQL MESSAGE" + cursor.getColumnIndex(ChatDatabaseHelper.KEY_MESSAGE));
+            Log.i("Chatwindow.java", "Column count" + cursor.getColumnCount());
+        }
+
+        for (int i = 0; i < cursor.getColumnCount(); i++){
+            cursor.getColumnName(i);
+        }
     }
 
     public ChatDatabaseHelper(Context ctx) {
