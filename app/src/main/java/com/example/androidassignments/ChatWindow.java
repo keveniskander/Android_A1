@@ -3,7 +3,10 @@ package com.example.androidassignments;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -21,6 +24,11 @@ public class ChatWindow extends AppCompatActivity {
     public ListView chat;
     public Button sendButton;
     public ChatAdapter messageAdapter;
+    private ChatDatabaseHelper dbOpen;
+    private SQLiteDatabase db;
+    private String[] columns = {
+            ChatDatabaseHelper.KEY_MESSAGE};
+
 
 
     @Override
@@ -34,6 +42,30 @@ public class ChatWindow extends AppCompatActivity {
 
         messageAdapter= new ChatAdapter(this);
         chat.setAdapter(messageAdapter);
+
+        dbOpen = new ChatDatabaseHelper(this);
+        db = dbOpen.getWritableDatabase();
+
+        ArrayList<String> MessageArray = new ArrayList<String>();
+
+        Cursor cursor = db.query(ChatDatabaseHelper.TABLE_NAME,
+                columns, null, null,
+                null, null, null);
+
+        cursor.moveToFirst();
+        Log.i("OUTER", "OUTSIDE LOOP");
+        while(!cursor.isAfterLast()){
+            MessageArray.add(cursor.getString((cursor.getColumnIndex(ChatDatabaseHelper.KEY_MESSAGE))));
+            Log.i("Chatwindow.java", "SQL MESSAGE" + cursor.getColumnIndex(ChatDatabaseHelper.KEY_MESSAGE));
+
+            Log.i("Chatwindow.java", "Column count" + cursor.getColumnCount());
+        }
+
+        for (int i = 0; i < cursor.getColumnCount(); i++){
+            Log.i("INNER", "INSIDE FOR LOOP");
+            cursor.getColumnName(i);
+        }
+        cursor.close();
 
 
     }
