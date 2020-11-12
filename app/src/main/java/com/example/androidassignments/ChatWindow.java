@@ -2,6 +2,7 @@ package com.example.androidassignments;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -69,13 +70,23 @@ public class ChatWindow extends AppCompatActivity {
 
 
     }
+    public void onDestroy(){
+        super.onDestroy();
+        db.close();
+    }
 
     public void sendMessage(View view){
+
+        ContentValues values = new ContentValues();
 
         messages.add(message.getText().toString());
         messageAdapter.notifyDataSetChanged();
 
         message.setText("");
+
+        values.put(ChatDatabaseHelper.KEY_MESSAGE,message.getText().toString());
+        db.insert(ChatDatabaseHelper.KEY_MESSAGE, null, values);
+
 
     }
     private class ChatAdapter extends ArrayAdapter<String>{
