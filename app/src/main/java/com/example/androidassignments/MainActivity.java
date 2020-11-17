@@ -95,4 +95,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void clickStartWeather(View view){
+        Intent intent = new Intent(MainActivity.this, WeatherForecast.class);
+
+        startActivityForResult(intent, 10);
+    }
+
 }
