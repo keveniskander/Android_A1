@@ -224,7 +224,7 @@ public class WeatherForecast extends Activity {
 
         @Override
         protected void onProgressUpdate(Integer... values) {
-            Log.i ("vlaues",  values[0] +"-------------------------------") ;
+            Log.i ("values",  values[0] +"-------------------------------") ;
             progressBar.setProgress(values[0]);
         }
     }
